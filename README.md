@@ -53,7 +53,7 @@ Board pin:     GND   3V3    4     3     2     1     0    3V3
 
 ```
 ┌────────────────────────────────┐
-│ BITCOIN                       + │  ← yellow header, trend +/- /= or ! on error
+│ BITCOIN                      + │  ← yellow header, trend +/- /= or ! on error
 │────────────────────────────────│
 │ AUD                            │
 │         A$123,456              │  ← green/red/white based on price movement
