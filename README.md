@@ -1,5 +1,7 @@
 # ESP32-C3 SuperMin BTC Price Display
 
+![Finished project](finished-project.jpeg)
+
 A live Bitcoin price ticker built from an ESP32-C3 SuperMin and a tiny 0.96" colour TFT.
 Fetches BTC/AUD and BTC/USD from CoinGecko every 60 seconds over WiFi and displays both prices with a trend indicator.
 
@@ -33,11 +35,15 @@ Board pin:     GND   3V3    4     3     2     1     0    3V3
 ## Setup
 
 1. Install [PlatformIO](https://platformio.org/) (VS Code extension or CLI).
-2. Clone / open this project folder.
-3. Edit `src/main.cpp` and set your WiFi credentials:
+2. Clone this repo.
+3. Copy the credentials template and fill in your WiFi details:
+   ```
+   cp include/secrets.h.example include/secrets.h
+   ```
+   Then edit `include/secrets.h`:
    ```cpp
-   const char* WIFI_SSID = "your-network";
-   const char* WIFI_PASS = "your-password";
+   #define WIFI_SSID "your-network"
+   #define WIFI_PASS "your-password"
    ```
 4. Build and upload: `pio run --target upload`
 5. Open the serial monitor at 115200 baud to see debug output.
